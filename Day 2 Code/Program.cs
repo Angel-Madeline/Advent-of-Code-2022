@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Day2
+namespace Day_2_Code
 {
     internal class Program
     {
