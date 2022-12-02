@@ -10,7 +10,6 @@ namespace Day_1_Code
     internal class Program
     {
         static string[] file = File.ReadAllLines("textfile.txt");
-
         static List<int> elfs = new List<int>();
 
         static void combinenums()
