@@ -1,0 +1,8 @@
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\bin\Debug\Day 2 Code.exe.config
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\bin\Debug\Day 2 Code.exe
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\bin\Debug\Day 2 Code.pdb
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\obj\Debug\Day 2 Code.csproj.AssemblyReference.cache
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\obj\Debug\Day 2 Code.csproj.SuggestedBindingRedirects.cache
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\obj\Debug\Day 2 Code.csproj.CoreCompileInputs.cache
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\obj\Debug\Day 2 Code.exe
+C:\Users\mysterion\desktop\Advent of Code 2022\Advent of Code 2022\Day 2 Code\obj\Debug\Day 2 Code.pdb
