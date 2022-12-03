@@ -11,10 +11,11 @@ namespace Day_3_Code
     internal class Program
     {
         static string[] file = File.ReadAllLines("AoCday3.txt");
+
+        #region Task One
         static string[] LRucksack = new string[file.Length];
         static string[] RRucksack = new string[file.Length];
-        static int totalpiroity = 0;
-        #region Task One
+        static int totalPiroityPartOne = 0;
         static void taskOneSplitSacks()
         {
             int middle = 0;
@@ -45,12 +46,12 @@ namespace Day_3_Code
                                 if (characterFound >= 65 && characterFound <= 90)
                                 {
                                     valueofcharacter = characterFound - 38;
-                                    totalpiroity += valueofcharacter;
+                                    totalPiroityPartOne += valueofcharacter;
                                 }
                                 else
                                 {
                                     valueofcharacter = characterFound - 96;
-                                    totalpiroity += valueofcharacter;
+                                    totalPiroityPartOne += valueofcharacter;
                                 }
                             }
                         }
@@ -63,19 +64,68 @@ namespace Day_3_Code
         {
             taskOneSplitSacks();
             taskOneFindCommonChar();
-            Console.WriteLine("The total piroity is: " + totalpiroity);
+            Console.WriteLine("The total piroity is: " + totalPiroityPartOne);
+        }
+        #endregion
+        #region Task Two
+        static int totalPiroityPartTwo = 0;
+        static void sortStrings()
+        {
+            string word1;
+            string word2;
+            string word3;
+            bool foundinword = false;
+            char characterFound;
+            int valueofcharacter;
+            for (int currentWords = 0; currentWords < file.Length; currentWords+=3)
+            {
+                word1 = file[currentWords];
+                word2 = file[currentWords+1];
+                word3 = file[currentWords+2];
+                foreach (char word1char in word1)
+                {
+                    foreach (char word2char in word2)
+                    {
+                        if (word1char == word2char)
+                        {
+                            foreach (char word3char in word3)
+                            {
+                                if (word2char == word3char)
+                                {
+                                    if (foundinword == false)
+                                    {
+                                        characterFound = word1char;
+                                        foundinword = true;
+                                        if (characterFound >= 65 && characterFound <= 90)
+                                        {
+                                            valueofcharacter = characterFound - 38;
+                                            totalPiroityPartTwo += valueofcharacter;
+                                        }
+                                        else
+                                        {
+                                            valueofcharacter = characterFound - 96;
+                                            totalPiroityPartTwo += valueofcharacter;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                foundinword = false;
+            }
+        }
+        static void taskTwoMain()
+        {
+            sortStrings();
+            Console.WriteLine("The total piroity is: " + totalPiroityPartTwo);
         }
         #endregion
 
-        static void taskTwo()
-        {
-
-        }
         static void Main(string[] args)
         {
             taskOneMain();
-
-            
+            taskTwoMain();
 
             Console.ReadLine();
         }
